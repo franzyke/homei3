@@ -1,0 +1,1 @@
+sudo apt install feh volumeicon-alsa rofi network-manager
