@@ -147,14 +147,20 @@ assign [class="GitKraken"] $w5
 
 # Docs 
 assign [class="Evince"] $w6
+assign [class="Anydesk"] $w6
 
 # Multimedia
 assign [class="vlc"] $w10
+
+
+# for_window [class="Nautilus" instance="file_progress"] floating enable #Awm tawh lo in ka hria
+for_window [class="Enpass-Desktop"] floating enable
 
 #auto start 
 exec --no-startup-id google-chrome
 exec --no-startup-id subl
 exec --no-startup-id i3-sensible-terminal
+exec --no-startup-id /opt/Enpass/bin/runenpass.sh %U
 
 # wallpaper
 # exec_always feh --randomize --bg-max /home/francis/Pictures/wpp/*
@@ -162,7 +168,8 @@ exec --no-startup-id /home/francis/.config/i3/wallchanger.sh
 
 # applets 
 exec --no-startup-id nm-applet
-exec --no-startup-id volumeicon
+# exec --no-startup-id xfce4-power-manager
+exec volumeicon
 
 # alt tab maybe
 bindsym Mod1+Tab workspace next
